@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: 'Mulish'; 
+}
+
+a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+  border: none !important;
+
+}
+
+body {
+  /* background-color: #ffffff !important; */
+}
+
+.mycontainer {
+  background-color: #e8e8e8 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 40px 0 15px #e8e8e8;
+ 
+}
+
+.mylable {
+
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-weight: 600;
+  
+}
+.myform{
+  margin-left: 10%
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.title {
+
+  font-size: 25px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-left: 10%;
+
+}
+
+.education {
+  font-size: 25px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.stulist-head {
+  font-size: 25px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.mylist-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+button{
+  width: max-content;
+}
+
+.error{
+  color: #cacf85;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.table>thead{
+  vertical-align: center ;
+  background-color: red;
+}
+
+/* @media only screen and(max-width:1024px) {
+  .mylable{
+
+    font-size: 1rem;
+    margin-left: -50%; 
+   display: inline-block;
+   width: 100px; /* Adjust width as needed */
+/* text-align: left; */
